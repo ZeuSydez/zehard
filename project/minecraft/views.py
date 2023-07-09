@@ -27,7 +27,7 @@ def login_required(test):
     return wrap
 
 def coords():
-    return db.session.query(MCCoord).order_by(MCCoord.coord_id.asc())
+    return db.session.query(MCCoord).order_by(MCCoord.coord_name.asc())
 
 ##############
 ### routes ###
@@ -59,4 +59,14 @@ def minecraft():
             return redirect(url_for("minecraft.minecraft"))
     return render_template("minecraft.html", coords=coords())
 
-
+@minecraft_bp.route("/delete/<int:coord_id>")
+@login_required
+def delete_coord(coord_id):
+    coord = db.session.query(MCCoord).filter_by(coord_id=coord_id)
+    if session["user_id"] == coord.first().user_id:
+        coord.delete()
+        db.session.commit()
+        return redirect(url_for("minecraft.minecraft"))
+    else:
+        return redirect(url_for("minecraft.minecraft"))
+    

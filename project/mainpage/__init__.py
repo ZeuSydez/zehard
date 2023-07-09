@@ -1,0 +1,1 @@
+# project/mainpage/__init__.py

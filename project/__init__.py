@@ -14,7 +14,9 @@ db = SQLAlchemy(app)
 
 from project.users.views import users_bp
 from project.minecraft.views import minecraft_bp
+from project.mainpage.views import mainpage_bp
 
 
 app.register_blueprint(users_bp)
 app.register_blueprint(minecraft_bp)
+app.register_blueprint(mainpage_bp)

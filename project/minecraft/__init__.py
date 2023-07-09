@@ -1,0 +1,1 @@
+# project/minecraft/__init__.py

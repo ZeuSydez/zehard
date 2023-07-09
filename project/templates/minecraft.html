@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<form method="POST">
+    <label for="coord_name">CoordName:</label>
+    <input type="text" name="coord_name">
+    <label for="coord_x">CoordX:</label>
+    <input type="text" name="coord_x">
+    <label for="coord_y">CoordY:</label>
+    <input type="text" name="coord_y">
+    <label for="coord_z">CoordZ:</label>
+    <input type="text" name="coord_z">
+    <button type="submit" value="submit">Send</button>
+</form>
+
+{% for coord in coords %}
+{{ coord.coord_name, coord.coord_x, coord.coord_y, coord.coord_z, coord.user.username }}
+{% endfor %}
+
+
+{% endblock %}

@@ -9,3 +9,5 @@ test/
 cover/
 
 .coverage
+
+noname.db

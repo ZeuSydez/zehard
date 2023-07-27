@@ -44,3 +44,9 @@ def login():
                 session["user_id"] = user.user_id
                 return redirect(url_for("minecraft.minecraft"))
     return render_template("login.html")
+
+@users_bp.route("/logout/", methods=["GET", "POST"])
+def logout():
+    session.pop("logged_in")
+    session.pop("user_id")
+    return redirect(url_for("users.login"))

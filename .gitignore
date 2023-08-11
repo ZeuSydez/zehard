@@ -11,3 +11,6 @@ cover/
 .coverage
 
 noname.db
+
+test.db
+

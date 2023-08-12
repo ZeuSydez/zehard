@@ -2,7 +2,7 @@
 
 
 ### imports ###
-from flask import Blueprint, redirect, \
+from flask import Blueprint, redirect, render_template, \
     url_for
 
 
@@ -17,3 +17,7 @@ mainpage_bp = Blueprint("mainpage", __name__)
 @mainpage_bp.route("/")
 def mainpage():
     return redirect(url_for("minecraft.minecraft"))
+
+@mainpage_bp.route("/color")
+def color():
+    return render_template("color.html")

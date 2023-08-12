@@ -2,39 +2,40 @@
 
 {% block content %}
 
-<form method="POST" class="row g-5 needs-validation" novalidate>
-    <div class="col-md-2">
-        <label for="coord_name" class="form-label">CoordName:</label>
-        <input type="text" name="coord_name" class="form-control" required>
-    </div>
-    <div class="col-md-2">
-        <label for="coord_x" class="form-label">CoordX:</label>
-        <input type="text" name="coord_x" class="form-control" required>
-    </div>
-    <div class=" col-md-2">
-        <label for="coord_y" class="form-label">CoordY:</label>
-        <input type="text" name="coord_y" class="form-control" required>
-    </div>
-    <div class=" col-md-2">
-        <label for=" coord_z" class="form-label">CoordZ:</label>
-        <input type="text" name="coord_z" class="form-control" required>
-    </div>
-    <div class=" col-md-3">
-        <label for="validationCustom02" class="form-label">Send Coordinates</label>
-        <div class="col-12">
-            <button type=" submit" value="submit" name="validationCustom02" class="btn btn-primary"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Send</button>
+<div class="container,mccoord">
+    <form method="POST" class="row g-5 needs-validation mt-3 mb-5" novalidate>
+        <div class="col-md-2">
+            <label for="coord_name" class="form-label">CoordName:</label>
+            <input type="text" name="coord_name" class="form-control" required>
         </div>
-    </div>
-</form>
-
+        <div class="col-md-2">
+            <label for="coord_x" class="form-label">CoordX:</label>
+            <input type="text" name="coord_x" class="form-control" required>
+        </div>
+        <div class=" col-md-2">
+            <label for="coord_y" class="form-label">CoordY:</label>
+            <input type="text" name="coord_y" class="form-control" required>
+        </div>
+        <div class=" col-md-2">
+            <label for=" coord_z" class="form-label">CoordZ:</label>
+            <input type="text" name="coord_z" class="form-control" required>
+        </div>
+        <div class=" col-md-2">
+            <label for="validationCustom02" class="form-label">Send Coordinates</label>
+            <div class="col-12">
+                <button type=" submit" value="submit" name="validationCustom02" class="btn btn-primary"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
 <div class="entries">
     <h2>Coordinates</h2>
-    <div class="datagrid">
-        <table class="table table-bordered border-primary">
+    <div class="">
+        <table class="table table-bordered border-info border-3">
             <thead>
                 <tr>
-                    <th>Coordinates Name<strong></strong></th>
+                    <th><strong>Coordinates Name</strong></th>
                     <th><strong>Coordinates</strong></th>
                     <th><strong>Posted By</strong></th>
                     <th><strong>Actions</strong></th>

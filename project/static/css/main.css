@@ -1,3 +1,13 @@
 body {
     background-color: white;
 }
+.mccoord{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -22,7 +22,7 @@
         </div>
         <div class=" col-md-2">
             <label for="validationCustom02" class="form-label">Send Coordinates</label>
-            <div class="col-12">
+            <div class="col-12,send">
                 <button type=" submit" value="submit" name="validationCustom02" class="btn btn-primary"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Send</button>
             </div>
@@ -35,10 +35,10 @@
         <table class="table table-bordered border-info border-3">
             <thead>
                 <tr>
-                    <th><strong>Coordinates Name</strong></th>
-                    <th><strong>Coordinates</strong></th>
-                    <th><strong>Posted By</strong></th>
-                    <th><strong>Actions</strong></th>
+                    <th>Coordinates Name</th>
+                    <th>Coordinates</th>
+                    <th>Posted By</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             {% for coord in coords %}

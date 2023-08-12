@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h1>Arkaplan Rengi Seçici</h1>
+<form id="color-form">
+    <label for="color-picker">Renk Seçin: </label>
+    <input type="color" id="color-picker" name="color">
+</form>
+<script>
+    const colorPicker = document.getElementById('color-picker');
+    colorPicker.addEventListener('input', function () {
+        const selectedColor = colorPicker.value;
+        document.body.style.backgroundColor = selectedColor;
+    });
+</script>
+
+{% endblock content %}

@@ -15,3 +15,13 @@ form{
     display: flex;
     justify-content: left;
 }
+#account-list li{
+    display: block;
+    padding: 5px;
+    color: #343A40;
+    background-color: #fff;
+}
+#account-list li:hover #account-list li{
+    background-color: #28A745;
+    color: white;
+}

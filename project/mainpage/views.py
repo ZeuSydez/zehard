@@ -20,4 +20,4 @@ def mainpage():
 
 @mainpage_bp.route("/color")
 def color():
-    return render_template("color.html")
+    return render_template("mainpage/color.html")

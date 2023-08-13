@@ -32,7 +32,7 @@ def register():
             db.session.add(user)
             db.session.commit()
             return redirect(url_for("users.login"))
-    return render_template("register.html")
+    return render_template("users/register.html")
 
 @users_bp.route("/login", methods=["GET", "POST"])
 def login():
@@ -43,7 +43,7 @@ def login():
                 session["logged_in"] = True
                 session["user_id"] = user.user_id
                 return redirect(url_for("minecraft.minecraft"))
-    return render_template("login.html")
+    return render_template("users/login.html")
 
 @users_bp.route("/logout/", methods=["GET", "POST"])
 def logout():

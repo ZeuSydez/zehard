@@ -17,3 +17,10 @@ DATABASE_PATH = os.path.join(basedir, DATABASE)
 
 # the database uri
 SQLALCHEMY_DATABASE_URI = "sqlite:///" + DATABASE_PATH
+
+# mail configs
+MAIL_SERVER = "smtp.office365.com"
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+MAIL_USERNAME = "zehard@outlook.com"
+MAIL_PASSWORD = "hardhus123123"

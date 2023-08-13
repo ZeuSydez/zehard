@@ -25,3 +25,24 @@ form{
     background-color: #28A745;
     color: white;
 }
+#navlink{
+
+    padding: 10px;
+    height: 100%;
+}
+.user-nav{
+    display: flex;
+    margin-right: 30px;
+}
+.user-nav a{
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.user-nav a:hover{
+    background-color: white;
+    color: rgb(64, 64, 185);
+}
+.search-bg{
+    background-color: white;
+    border-radius: 10%;
+}

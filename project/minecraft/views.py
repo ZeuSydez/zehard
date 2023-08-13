@@ -57,7 +57,7 @@ def minecraft():
             db.session.add(new_coord)
             db.session.commit()
             return redirect(url_for("minecraft.minecraft"))
-    return render_template("minecraft.html", coords=coords())
+    return render_template("minecraft/minecraft.html", coords=coords())
 
 @minecraft_bp.route("/delete/<int:coord_id>")
 @login_required
